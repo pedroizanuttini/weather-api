@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 60px;
+    background-color: var(--secondary-color);
+}
+
+
+footer p {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+    color:#A09FB1;
+}
+
