@@ -38,5 +38,14 @@ button{
 
 .icon--secondary{
     background-color: #6e707a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.icon-large{
+    width: 30px;
+    height: 30px;
 }
 

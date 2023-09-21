@@ -13,6 +13,11 @@
     padding:18px 11px;
 }
 
+.weather-image{
+    width: 100%;
+    height:100%;
+}
+
 .hero-container__weather-info{
     display: flex;
     flex-direction: column;
