@@ -4,7 +4,7 @@ import Navbar from './layouts/Navbar';
 import Footer from './layouts/Footer';
 import Hero from './components/Hero/Hero';
 import WeatherContainer from './components/WeatherContainer/WeatherContainer'
-import HighlightItem from './components/HighlightsItem/HighlightsItem';
+import HighlightItemContainer from './components/HighlightsItemContainer/HighlightsItemContainer';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <div>   
             <Hero/>
             <WeatherContainer/>
-            <HighlightItem/>
+            <HighlightItemContainer/>
             <Footer/>       
         </div>
     )

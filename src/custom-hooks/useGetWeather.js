@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getDate } from "../utils/dates";
 import { API_URL } from "../constants";
 import { API_KEY } from "../constants";
-
+import {kelvinToCelcius} from "../utils/unitConverter"
 
 const useGetWeather = () =>{
 
@@ -24,7 +24,7 @@ const useGetWeather = () =>{
       const response = await fetch(`${API_URL}lat=-33.894069&lon=151.2685387&${API_KEY}`);
       const data= await response.json() //como la respuesta viene en json la parseo
       const kelvin = data.current.temp;
-      const celsius = (kelvin - 273.15).toFixed(1);
+      const celsius = kelvinToCelcius(kelvin)
       setTemperature(celsius);
 
       const date = getDate(data.current.dt * 1000);
@@ -66,9 +66,9 @@ const useGetWeather = () =>{
 
 
 
-return {
+  return {
     temperature, currentDate, location, loading, error, getWeather,currentWeather, weatherWeek,wind,humidity,visibility,pressure
-}
+  }
 
 }
 export default useGetWeather;

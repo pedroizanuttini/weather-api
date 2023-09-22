@@ -1,0 +1,33 @@
+.highlight-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E213A;
+    min-width: 350px;
+    max-width: 450px;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+
+.info-card__title{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+
+.info-card__value{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+

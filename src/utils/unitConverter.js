@@ -5,7 +5,8 @@ const celciusToFahrenheit = (celcius) => {
 };
 
 const kelvinToCelcius = (kelvin) => {
-    return kelvin - 273.15;
+    const celsius = kelvin - 273.15;
+    return celsius.toFixed(0);
 };
 
 const millisecondsToSeconds = (milliseconds) => {
